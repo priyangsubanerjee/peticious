@@ -13,14 +13,15 @@ function Profile() {
         />
         <h1 className="text-lg font-semibold mt-3">Priyangsu Banerjee</h1>
         <div className="flex items-center justify-center mt-2">
-          <i class="bi bi-calendar2"></i>
+          <i className="bi bi-calendar2"></i>
           <p className="text-xs text-slate-700 leading-5 ml-2">
             Member since July, 2022
           </p>
         </div>
         <div className="flex items-center justify-center mt-5">
           <span className="text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
-            Manage your pets <i class="bi bi-chevron-right ml-3 text-sm"></i>
+            Manage your pets{" "}
+            <i className="bi bi-chevron-right ml-3 text-sm"></i>
           </span>
         </div>
       </div>
