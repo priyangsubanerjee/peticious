@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import CreateQuestion from "../Question/CreateQuestion";
 
-function Quickmenu() {
+function Quickmenu({ className }) {
   const [createQuestion, setCreateQuestion] = useState(false);
   return (
     <div>
       <div className="flex items-center">
-        <div className="w-full bg-pink-50 border-b rounded-md grid grid-cols-3">
+        <div
+          className={`${className} w-full bg-pink-50 border-b rounded-md grid grid-cols-3`}
+        >
           <div
             onClick={() => setCreateQuestion(true)}
             className="flex flex-col items-center justify-center bg-white px-4 py-2 border-r"

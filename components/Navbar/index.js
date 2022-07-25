@@ -61,14 +61,20 @@ function Navbar() {
               <span className="text-sm ml-2">Discuss</span>
             </a>
           </Link>
-          <a
-            className={`flex ${
-              router.pathname == "/profile" && " text-red-500"
-            } items-center w-full justify-center`}
-          >
-            <i className="bi bi-person"></i>
-            <span className="text-sm ml-2">Profile</span>
-          </a>
+          <Link href={`/profile`}>
+            <a
+              className={`flex ${
+                router.pathname == "/profile" && " text-red-500"
+              } items-center w-full justify-center`}
+            >
+              <i
+                className={`bi ${
+                  router.pathname == "/profile" ? "bi-person-fill" : "bi-person"
+                }`}
+              ></i>
+              <span className="text-sm ml-2">Profile</span>
+            </a>
+          </Link>
         </div>
         <i className="bi bi-search text-lg"></i>
       </div>
