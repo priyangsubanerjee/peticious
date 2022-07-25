@@ -1,13 +1,16 @@
-import React from "react";
-import QuickMenu from "../components/Quickmenu";
-import Container from "../components/Layout/Container";
+import React, { useState, useEffect } from "react";
 
 function Profile() {
+  const [updateProfilePhoto, setUpdateProfilePhoto] = useState(true);
+
   return (
     <div>
       <div className="px-6 mt-6 text-center">
         <div className="text-right">
-          <i className="bi bi-pencil"></i>
+          <i
+            onClick={() => setUpdateProfilePhoto(true)}
+            className="bi bi-pencil"
+          ></i>
         </div>
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
@@ -42,6 +45,28 @@ function Profile() {
           <span className="text-xs text-slate-600 mt-2">Saved</span>
         </div>
       </div>
+      {updateProfilePhoto && (
+        <div className="bg-black/30 h-full w-full fixed top-0 left-0 z-20 flex flex-col items-center justify-end p-5">
+          <div className="w-full h-fit bg-white rounded-xl overflow-hidden">
+            <ul>
+              <li className="flex items-center py-5 px-6 border-b">
+                <i className="bi bi-image"></i>
+                <span className="ml-3">Choose new profile photo</span>
+              </li>
+              <li className="flex items-center py-5 px-6">
+                <i className="bi bi-x-circle"></i>
+                <span className="ml-3">Remove profile photo</span>
+              </li>
+              <li
+                onClick={() => setUpdateProfilePhoto(false)}
+                className="flex items-center justify-center border-t bg-slate-100 py-3 px-6"
+              >
+                <span className="ml-2">Close</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
