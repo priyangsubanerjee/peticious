@@ -5,6 +5,13 @@
 /.pnp
 .pnp.js
 
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
 # testing
 /coverage
 
@@ -27,6 +34,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
+.env
 # vercel
 .vercel
