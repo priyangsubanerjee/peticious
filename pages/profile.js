@@ -5,7 +5,10 @@ import Container from "../components/Layout/Container";
 function Profile() {
   return (
     <div>
-      <div className="px-6 mt-8 text-center">
+      <div className="px-6 mt-6 text-center">
+        <div className="text-right">
+          <i class="bi bi-pencil"></i>
+        </div>
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
           className="h-20 w-20 object-cover rounded-full mx-auto"
