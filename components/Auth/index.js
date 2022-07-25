@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
-
+import Button from "../Button";
 function Auth({ open, setOpen }) {
   const [user, setUser] = useState({
     email: "",
@@ -8,6 +8,7 @@ function Auth({ open, setOpen }) {
   });
 
   const [state, setState] = useState("login");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     open
@@ -41,7 +42,10 @@ function Auth({ open, setOpen }) {
                       with registered credentials
                     </p>
                   </div>
-                  <form className="px-6 mt-10">
+                  <form
+                    onSubmit={(e) => e.preventDefault()}
+                    className="px-6 mt-10"
+                  >
                     <div className="flex items-center border rounded-full py-3 px-6">
                       <i className="bi bi-envelope mr-3 text-lg text-slate-500"></i>
                       <input
@@ -80,9 +84,14 @@ function Auth({ open, setOpen }) {
                         id=""
                       />
                     </div>
-                    <button className="bg-red-400 text-white w-full py-3 rounded-full mt-6 font-medium">
+                    <Button
+                      loading={loading}
+                      onClick={() => setLoading(true)}
+                      loadingText={"Processing"}
+                      className="rounded-full w-full mt-5 py-3"
+                    >
                       Login
-                    </button>
+                    </Button>
                   </form>
                   <p className="text-sm text-slate-500 text-center mt-10">
                     New here?
