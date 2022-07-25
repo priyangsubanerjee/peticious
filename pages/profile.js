@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Profile() {
-  const [updateProfilePhoto, setUpdateProfilePhoto] = useState(true);
+  const [updateProfilePhoto, setUpdateProfilePhoto] = useState(false);
 
   return (
     <div>
@@ -59,7 +59,7 @@ function Profile() {
               </li>
               <li
                 onClick={() => setUpdateProfilePhoto(false)}
-                className="flex items-center justify-center border-t bg-slate-100 py-3 px-6"
+                className="flex items-center justify-center border-t bg-gray-100 py-3 px-6"
               >
                 <span className="ml-2">Close</span>
               </li>
