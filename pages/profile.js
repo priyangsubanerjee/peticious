@@ -24,7 +24,7 @@ function Profile() {
         <div className="flex items-center justify-center mt-5">
           <span className="text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
             Manage your pets{" "}
-            <i className="bi bi-chevron-right ml-3 text-sm"></i>
+            <i className="bi bi-chevron-right ml-2 text-sm"></i>
           </span>
         </div>
       </div>
