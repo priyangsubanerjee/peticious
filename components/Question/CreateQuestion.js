@@ -18,18 +18,18 @@ function CreateQuestion({ open, setOpen }) {
               <div className="flex items-center p-4">
                 <i
                   onClick={() => setOpen(false)}
-                  class="bi bi-x ml-auto text-2xl"
+                  className="bi bi-x ml-auto text-2xl"
                 ></i>
               </div>
               <div className="flex items-cente justify-center">
-                <i class="bi bi-patch-question text-2xl"></i>
+                <i className="bi bi-patch-question text-2xl"></i>
                 <p className="text-xl font-bold text-slate-900 ml-3">
                   Ask a question.
                 </p>
               </div>
               <>
                 <div className="flex w-fit mx-auto items-center justify-center mt-4 bg-red-50  text-red-500 py-2 px-4 rounded-md">
-                  <i class="bi bi-hourglass-split mr-2 text-sm"></i>
+                  <i className="bi bi-hourglass-split mr-2 text-sm"></i>
                   <p className="text-xs">Typically replies within an hour.</p>
                 </div>
                 <div className="px-6 mt-16">
@@ -41,7 +41,7 @@ function CreateQuestion({ open, setOpen }) {
                     id=""
                   />
                   <div className="flex items-center bg-red-50 w-fit px-5 py-2 mt-5 text-red-500 rounded-full">
-                    <i class="bi bi-paperclip rotate-90 mr-2"></i>
+                    <i className="bi bi-paperclip rotate-90 mr-2"></i>
                     <span className="text-xs">Attach file</span>
                   </div>
                   <div className="bg-slate-50 mt-8 p-4">
