@@ -29,8 +29,8 @@ function Navbar() {
         <img src="/logoDark.png" className="h-7" alt="" />
         <p className="text-xl font-bold text-slate-900 ml-3">Peticious.</p>
       </div>
-      <div className="flex items-center">
-        <div className="px-6 py-4 grid grid-cols-3 fixed bottom-0 left-0 w-full border-t bg-white">
+      <div className="flex items-center ">
+        <div className="px-6 py-4 grid grid-cols-3 fixed bottom-0 left-0 w-full border-t bg-white  shadow-3xl">
           <Link href={`/`}>
             <a
               className={`flex ${

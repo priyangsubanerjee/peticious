@@ -28,9 +28,9 @@ function CreateQuestion({ open, setOpen }) {
                 </p>
               </div>
               <>
-                <div className="flex w-fit mx-auto items-center justify-center mt-4 bg-red-50  text-red-500 py-2 px-4 rounded-md">
-                  <i className="bi bi-hourglass-split mr-2 text-sm"></i>
-                  <p className="text-xs">Typically replies within an hour.</p>
+                <div className="flex w-fit mx-auto items-center justify-center mt-4 bg-blue-50  text-blue-500 py-2 px-4 rounded-md">
+                  <i className="bi bi-clock-history mr-2 text-sm"></i>
+                  <p className="text-xs">Avg reply time is 30 min&apos;s</p>
                 </div>
                 <div className="px-6 mt-16">
                   <input

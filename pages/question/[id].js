@@ -77,7 +77,7 @@ function Question() {
         </div>
         {replyBoxOpen && (
           <div>
-            <div className="border-b h-32 p-4 rounded flex">
+            <div className="border-b h-32 p-4 rounded flex bg-slate-50">
               <img
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
                 className="h-6 w-6 object-cover rounded-full"
@@ -86,7 +86,7 @@ function Question() {
               <textarea
                 name=""
                 placeholder="Type your reply ..."
-                className="ml-4 w-full outline-none h-full"
+                className="ml-4 w-full outline-none h-full bg-transparent"
                 id=""
                 ref={input}
                 cols="30"
