@@ -1,21 +1,22 @@
 import React from "react";
+import Draggable from "react-draggable";
 import { Fade } from "react-reveal";
 function BottomSheet({ open, setOpen, children, className }) {
   return (
     <div className={`z-20`}>
       <Fade duration={300} when={open}>
         {open && (
-          <div className="fixed top-0 left-0 h-full w-full bg-black/40 z-20"></div>
+          <div className="fixed top-0 left-0 h-full w-full bg-black/50 z-20"></div>
         )}
       </Fade>
-      <Fade bottom duration={400} when={open}>
+      <Fade bottom duration={400} when={open} delay={50}>
         {open && (
-          <div className="fixed top-0 left-0 h-full w-full bg-transparent flex items-end p-5 z-30">
-            <div className="bg-white rounded-xl overflow-hidden w-full">
+          <div className="fixed top-0 left-0 h-full w-full bg-transparent flex items-end p-4 z-30">
+            <div className="rounded-xl overflow-hidden w-full backdrop-blur-lg bg-white">
               {children}
               <button
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center w-full border-t bg-gray-100 py-3 px-6"
+                className="flex items-center justify-center w-full bg-gray-100 text-slate-600 py-3 px-6"
               >
                 <span className="ml-2">Dismiss</span>
               </button>

@@ -17,6 +17,7 @@
     "react": "18.2.0",
     "react-bottom-sheet": "^1.1.1",
     "react-dom": "18.2.0",
+    "react-draggable": "^4.4.5",
     "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",
     "react-spring-bottom-sheet": "^3.4.1"
