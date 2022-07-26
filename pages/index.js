@@ -2,8 +2,11 @@ import Container from "../components/Layout/Container";
 import Quickmenu from "../components/Quickmenu";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Head from "next/head";
+import React, { useState, useEffect } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <Container>
       <Quickmenu />
@@ -71,7 +74,10 @@ export default function Home() {
           />
         </div>
       </Carousel>
-      <div className="bg-white p-6 md:p-16 border-b">
+      <div
+        onClick={() => setOpen(true)}
+        className="bg-white p-6 md:p-16 border-b"
+      >
         <div className="flex items-center">
           <i className="fi fi-br-chart-line-up mr-3 mt-2 text-lg text-slate-600"></i>
           <h1 className="font-bold text-xs text-slate-800">

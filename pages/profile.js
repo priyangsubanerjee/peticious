@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Fade } from "react-reveal";
 
 function Profile() {
   const [updateProfilePhoto, setUpdateProfilePhoto] = useState(false);
@@ -45,28 +46,35 @@ function Profile() {
           <span className="text-xs text-slate-600 mt-2">Saved</span>
         </div>
       </div>
-      {updateProfilePhoto && (
-        <div className="bg-black/30 h-full w-full fixed top-0 left-0 z-20 flex flex-col items-center justify-end p-5">
-          <div className="w-full h-fit bg-white rounded-xl overflow-hidden">
-            <ul>
-              <li className="flex items-center py-5 px-6 border-b">
-                <i className="bi bi-image"></i>
-                <span className="ml-3">Choose new profile photo</span>
-              </li>
-              <li className="flex items-center py-5 px-6">
-                <i className="bi bi-x-circle"></i>
-                <span className="ml-3">Remove profile photo</span>
-              </li>
-              <li
-                onClick={() => setUpdateProfilePhoto(false)}
-                className="flex items-center justify-center border-t bg-gray-100 py-3 px-6"
-              >
-                <span className="ml-2">Close</span>
-              </li>
-            </ul>
+      <Fade when={updateProfilePhoto} duration={300}>
+        {updateProfilePhoto && (
+          <div className="fixed top-0 left-0 bg-black/40 h-full w-full z-10"></div>
+        )}
+      </Fade>
+      <Fade duration={300} bottom when={updateProfilePhoto}>
+        {updateProfilePhoto && (
+          <div className="fixed top-0 left-0 h-full w-full z-10 flex items-end p-4">
+            <div className="w-full h-fit bg-white rounded-xl overflow-hidden">
+              <ul>
+                <li className="flex items-center py-5 px-6 border-b">
+                  <i className="bi bi-image"></i>
+                  <span className="ml-3">Choose new profile photo</span>
+                </li>
+                <li className="flex items-center py-5 px-6">
+                  <i className="bi bi-x-circle"></i>
+                  <span className="ml-3">Remove profile photo</span>
+                </li>
+                <li
+                  onClick={() => setUpdateProfilePhoto(false)}
+                  className="flex items-center justify-center border-t bg-gray-100 py-3 px-6"
+                >
+                  <span className="ml-2">Close</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </Fade>
     </div>
   );
 }
