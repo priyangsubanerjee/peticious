@@ -51,9 +51,9 @@ function Profile() {
           <div className="fixed top-0 left-0 bg-black/40 h-full w-full z-10"></div>
         )}
       </Fade>
-      <Fade duration={300} bottom when={updateProfilePhoto}>
+      <Fade duration={500} bottom when={updateProfilePhoto}>
         {updateProfilePhoto && (
-          <div className="fixed top-0 left-0 h-full w-full z-10 flex items-end p-4">
+          <div className="fixed top-0 left-0 h-full w-full z-10 flex items-end p-5">
             <div className="w-full h-fit bg-white rounded-xl overflow-hidden">
               <ul>
                 <li className="flex items-center py-5 px-6 border-b">
