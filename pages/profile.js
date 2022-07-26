@@ -4,11 +4,16 @@ import BottomSheet from "../components/BottomSheet";
 
 function Profile() {
   const [updateProfilePhoto, setUpdateProfilePhoto] = useState(false);
+  const [logout, setLogout] = useState(false);
 
   return (
     <div>
       <div className="px-6 mt-6 text-center">
-        <div className="text-right">
+        <div className="flex items-center justify-between">
+          <i
+            onClick={() => setLogout(true)}
+            className="bi bi-box-arrow-left"
+          ></i>
           <i
             onClick={() => setUpdateProfilePhoto(true)}
             className="bi bi-pencil"
@@ -54,9 +59,32 @@ function Profile() {
             <i className="bi bi-image"></i>
             <span className="ml-3">Choose new profile photo</span>
           </li>
-          <li className="flex items-center py-5 px-6">
+          <li className="flex items-center py-5 px-6 border-b">
             <i className="bi bi-x-circle"></i>
             <span className="ml-3">Remove profile photo</span>
+          </li>
+          <li className="flex items-center py-5 px-6 border-b">
+            <i className="bi bi-input-cursor"></i>
+            <span className="ml-3">Update name</span>
+          </li>
+          <li className="flex items-center py-5 px-6">
+            <i className="bi bi-lock"></i>
+            <span className="ml-3">Change password</span>
+          </li>
+        </ul>
+      </BottomSheet>
+      <BottomSheet open={logout} setOpen={setLogout}>
+        <div className="px-4 pt-6 text-center font-medium">
+          Are you sure you want to log out?
+        </div>
+        <ul className="mt-4">
+          <li className="flex items-center py-5 px-6 border-b">
+            <i className="bi bi-check-lg"></i>
+            <span className="ml-3">Yes</span>
+          </li>
+          <li className="flex items-center py-5 px-6">
+            <i className="bi bi-x text-lg"></i>
+            <span className="ml-3">No</span>
           </li>
         </ul>
       </BottomSheet>

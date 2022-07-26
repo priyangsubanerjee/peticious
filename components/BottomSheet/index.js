@@ -16,7 +16,7 @@ function BottomSheet({ open, setOpen, children, className }) {
               {children}
               <button
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center w-full bg-gray-100 text-slate-600 py-3 px-6"
+                className="flex items-center justify-center w-full bg-gray-100 text-slate-800 py-3 px-6"
               >
                 <span className="ml-2">Dismiss</span>
               </button>

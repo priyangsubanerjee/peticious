@@ -66,8 +66,7 @@ function Auth({ open, setOpen }) {
                       />
                     </div>
                     <div className="flex items-center border rounded-full py-3 px-6 mt-4">
-                      <i className="bi bi-asterisk text-[8px] text-slate-500"></i>
-                      <i className="bi bi-asterisk text-[8px] mr-3 text-slate-500"></i>
+                      <i className="bi bi-lock mr-3 text-lg text-slate-500"></i>
                       <input
                         type="password"
                         name=""
@@ -154,8 +153,7 @@ function Auth({ open, setOpen }) {
                       />
                     </div>
                     <div className="flex items-center border rounded-full py-3 px-6 mt-4">
-                      <i className="bi bi-asterisk text-[8px] text-slate-500"></i>
-                      <i className="bi bi-asterisk text-[8px] mr-3 text-slate-500"></i>
+                      <i className="bi bi-lock mr-3 text-lg text-slate-500"></i>
                       <input
                         type="text"
                         name=""
