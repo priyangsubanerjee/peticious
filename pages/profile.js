@@ -96,7 +96,7 @@ function Profile() {
           </li>
         </ul>
       </BottomSheet>
-      <Auth open={true} close={closeAuthCard} />
+      <Auth open={false} close={closeAuthCard} />
     </div>
   );
 }
