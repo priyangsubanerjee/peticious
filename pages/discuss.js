@@ -8,7 +8,7 @@ function Discuss() {
     <div>
       <Quickmenu />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 p-4">
           <QuestionCard id="2002" />
           <QuestionCard id="2003" />
           <QuestionCard id="2004" />
