@@ -16,18 +16,18 @@ function Quickmenu({ className }) {
             className="flex flex-col items-center justify-center bg-white px-4 py-2 border-r"
           >
             <i className="bi bi-patch-question-fill text-xl text-blue-400"></i>
-            <span className="text-xs font-medium mt-1">Ask a question</span>
+            <span className="text-xs mt-1">Ask a question</span>
           </div>
           <div className="flex flex-col items-center border-r justify-center bg-white px-4 py-2">
             <i className="bi bi-postcard-heart-fill text-xl text-pink-400"></i>
-            <span className="text-xs font-medium mt-1">Create a post</span>
+            <span className="text-xs mt-1">Create a post</span>
           </div>
           <div
             onClick={() => setMoreOptions(true)}
             className="flex flex-col items-center justify-center bg-white px-4 py-2"
           >
             <i className="bi bi-three-dots text-xl text-purple-400"></i>
-            <span className="text-xs font-medium mt-1">More</span>
+            <span className="text-xs mt-1">More</span>
           </div>
         </div>
       </div>
