@@ -37,11 +37,11 @@ function Profile() {
           </p>
         </div>
         <div className="flex items-center justify-center mt-5">
-          <span className="text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
+          <span className="text-xs bg-sky-50 text-sky-600 rounded py-2 px-4 flex items-center">
             Manage your pets{" "}
             <i className="bi bi-chevron-right ml-2 text-sm"></i>
           </span>
-          <span className="ml-3 text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
+          <span className="ml-3 text-xs bg-pink-50 text-pink-600 rounded py-2 px-4 flex items-center">
             Health records <i className="bi bi-chevron-right ml-2 text-sm"></i>
           </span>
         </div>
