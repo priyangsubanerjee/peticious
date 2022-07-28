@@ -9,7 +9,7 @@ function BottomSheet({ open, setOpen, children, className }) {
           <div className="fixed top-0 left-0 h-full w-full bg-black/50 z-20"></div>
         )}
       </Fade>
-      <Fade bottom duration={400} when={open} delay={50}>
+      <Fade bottom duration={300} when={open} delay={20}>
         {open && (
           <div className="fixed top-0 left-0 h-full w-full bg-transparent flex items-end p-4 z-30">
             <div className="rounded-xl overflow-hidden w-full backdrop-blur-lg bg-white">

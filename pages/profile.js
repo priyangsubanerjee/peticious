@@ -16,7 +16,7 @@ function Profile() {
           ></i>
           <i
             onClick={() => setUpdateProfilePhoto(true)}
-            className="bi bi-pencil"
+            className="bi bi-gear"
           ></i>
         </div>
         <img
@@ -35,6 +35,9 @@ function Profile() {
           <span className="text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
             Manage your pets{" "}
             <i className="bi bi-chevron-right ml-2 text-sm"></i>
+          </span>
+          <span className="ml-3 text-xs text-slate-700 bg-slate-100 rounded py-2 px-4 flex items-center">
+            Health records <i className="bi bi-chevron-right ml-2 text-sm"></i>
           </span>
         </div>
       </div>
