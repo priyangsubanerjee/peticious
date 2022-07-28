@@ -17,11 +17,11 @@ function Profile() {
         <div className="flex items-center justify-between">
           <i
             onClick={() => setLogout(true)}
-            className="bi bi-box-arrow-left text-lg"
+            className="bi bi-box-arrow-left text-xl"
           ></i>
           <i
             onClick={() => setUpdateProfilePhoto(true)}
-            className="bi bi-gear"
+            className="bi bi-gear text-xl"
           ></i>
         </div>
         <img
