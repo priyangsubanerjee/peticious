@@ -10,19 +10,21 @@ function QuestionCard({ id }) {
       <div className="flex items-center p-4">
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
-          className="h-12 w-12 object-cover rounded-full"
+          className="h-8 w-8 object-cover rounded-full"
           alt=""
         />
-        <div className="ml-3">
+        <div className="ml-3 flex items-center">
           <p className="text-sm font-semibold">Richelle</p>
+          <p className="text-sm font-semibold mx-2">•</p>
           <p className="text-xs text-slate-700 my-[2px]">Xoom (Labrador)</p>
+          <p className="text-sm font-semibold mx-2">•</p>
           <p className="text-xs text-slate-500">2 days ago.</p>
         </div>
       </div>
       <div className="px-4">
         <h1
           onClick={() => setReplyBoxOpen(true) & setViewAllReplies(true)}
-          className="font-medium text-slate-700"
+          className="font-medium text-slate-700 text-sm"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat,
           error ?
