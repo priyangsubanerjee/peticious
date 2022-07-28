@@ -13,15 +13,15 @@ function QuestionCard({ id }) {
       <div className="flex items-center p-4">
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
-          className="h-10 w-10 object-cover rounded-full"
+          className="h-8 w-8 object-cover rounded-full"
           alt=""
         />
         <div className="ml-3">
-          <p className="text-sm font-semibold">Richelle</p>
+          <p className="text-xs font-semibold">Richelle</p>
           <div className="flex items-center">
-            <p className="text-xs text-slate-700">Xoom (Labrador)</p>
+            <p className="text-xe text-slate-700">Xoom (Labrador)</p>
             <p className="text-sm font-semibold mx-2">•</p>
-            <p className="text-xs text-slate-500">2 days ago.</p>
+            <p className="text-xe text-slate-500">2 days ago.</p>
           </div>
         </div>
       </div>
@@ -34,10 +34,10 @@ function QuestionCard({ id }) {
           error ?
         </h1>
         <div className="flex items-center mt-4">
-          <span className="text-xs text-slate-900 bg-slate-100 px-2 py-1 mr-3">
+          <span className="text-xe text-slate-900 bg-slate-100 px-2 py-1 mr-3">
             Health
           </span>
-          <span className="text-xs text-slate-900 bg-slate-100 px-2 py-1 mr-3">
+          <span className="text-xe text-slate-900 bg-slate-100 px-2 py-1 mr-3">
             Health
           </span>
         </div>
