@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import Button from "../Button";
-function Auth({ open, setOpen }) {
+function Auth({ open, close }) {
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -24,7 +24,7 @@ function Auth({ open, setOpen }) {
             <div className="h-full w-full bg-white">
               <div className="flex items-center p-4">
                 <i
-                  onClick={() => setOpen(false)}
+                  onClick={() => close()}
                   className="bi bi-x ml-auto text-2xl"
                 ></i>
               </div>

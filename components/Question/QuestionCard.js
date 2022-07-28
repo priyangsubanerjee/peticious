@@ -5,6 +5,9 @@ import Link from "next/link";
 function QuestionCard({ id }) {
   const [liked, setLiked] = useState(false);
   const [authCardOpen, setAuthCardOpen] = useState(false);
+
+  const closeAuthCard = () => setAuthCardOpen(false);
+
   return (
     <div id={id} className="border bg-white h-fit">
       <div className="flex items-center p-4">
@@ -61,7 +64,7 @@ function QuestionCard({ id }) {
           <i className="bi bi-bookmark"></i>
         </div>
       </div>
-      <Auth open={authCardOpen} setOpen={setAuthCardOpen} />
+      <Auth open={authCardOpen} close={closeAuthCard} cancelable />
     </div>
   );
 }

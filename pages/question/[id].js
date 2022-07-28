@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import ReplyCard from "../../components/Reply/ReplyCard";
 import Link from "next/link";
 import { Fade } from "react-reveal";
+import { useRouter } from "next/router";
 
 function Question() {
+  const router = useRouter();
   const input = useRef(null);
   const [liked, setLiked] = useState(false);
   const [replyBoxOpen, setReplyBoxOpen] = useState(true);
@@ -16,12 +18,13 @@ function Question() {
     <Fade duration={300}>
       <div className="fixed top-0 left-0 h-full w-full bg-white z-20 overflow-y-auto">
         <div className="flex items-center p-4 border-b bg-white sticky top-0 left-0">
-          <Link href={`/discuss/#2003`}>
-            <div className="flex items-center w-fit">
-              <i className="bi bi-arrow-left text-xl"></i>
-              <span className="font-semibold ml-3 text-lg">Replies</span>
-            </div>
-          </Link>
+          <div
+            onClick={() => router.push("/discuss/#2003")}
+            className="flex items-center w-fit"
+          >
+            <i className="bi bi-arrow-left text-xl"></i>
+            <span className="font-semibold ml-3 text-lg">Replies</span>
+          </div>
         </div>
         <div className="flex items-center p-4">
           <img

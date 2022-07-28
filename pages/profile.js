@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
 import BottomSheet from "../components/BottomSheet";
+import Auth from "../components/Auth";
+import { useRouter } from "next/router";
 
 function Profile() {
+  const router = useRouter();
   const [updateProfilePhoto, setUpdateProfilePhoto] = useState(false);
   const [logout, setLogout] = useState(false);
+
+  const closeAuthCard = () => router.back();
 
   return (
     <div>
@@ -91,6 +96,7 @@ function Profile() {
           </li>
         </ul>
       </BottomSheet>
+      <Auth open={true} close={closeAuthCard} />
     </div>
   );
 }
