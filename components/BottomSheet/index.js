@@ -11,8 +11,8 @@ function BottomSheet({ open, setOpen, children, className }) {
       </Fade>
       <Fade bottom duration={300} when={open} delay={20}>
         {open && (
-          <div className="fixed top-0 left-0 h-full w-full bg-transparent flex items-end z-30">
-            <div className="rounded-t overflow-hidden w-full backdrop-blur-lg bg-white">
+          <div className="fixed top-0 left-0 h-full w-full bg-transparent flex items-end p-4 z-30">
+            <div className="rounded-xl overflow-hidden w-full backdrop-blur-lg bg-white">
               {children}
               <button
                 onClick={() => setOpen(false)}
